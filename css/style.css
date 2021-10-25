@@ -80,7 +80,7 @@ body{
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  min-height: 400px;
+  min-height: 440px;
   display: flex;
   align-items: center;
   padding: 100px;
@@ -91,7 +91,23 @@ body{
 }
 .slade-content{
   position: relative;
-  max-width: 400px;
+  max-width: 500px;
+}
+.slader-buttons{
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.slider-button{
+  cursor: pointer;
+}
+.swiper{
+  position: relative;
 }
 .slide-title{
   margin-top: 0;
@@ -99,6 +115,7 @@ body{
   font-weight: bold;
   font-size: 50px;
   line-height: 51px;
+
 }
 .slade-text{
   font-weight: bold;
@@ -114,7 +131,7 @@ body{
   background-color: #fff;
   color:#5F5F61;
 }
-.button {
+.button{
   border-radius: 25px;
   padding: 12px 50px;
   display: inline-block;
@@ -126,6 +143,16 @@ body{
 }
 .slade-summer{
   background-image: url('../img/summer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slade-autumn{
+  background-image: url('../img/autumn.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slade-vitamins{
+  background-image: url('../img/vitamins.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -449,4 +476,60 @@ body{
   line-height: 22px;
   text-align: center;
   color: #49494F;
+}
+@media (max-width: 1260px) {
+  .container{
+    max-width: 960px;
+  }
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .tabs-content{
+    flex-wrap: wrap;
+  }
+  .tabs-card{
+    flex: 50%;
+    max-width: calc(50% - 30px);
+  }
+  .benefits-cards{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px){
+  .container{
+    max-width: 750px;
+  }
+  .slade{
+    padding: 70px;
+  }
+  .delivery-card{
+    width: calc(50% - 30px);
+  }
+  .fotter-logo{
+    margin-right: 40px;
+  }
+}
+@media (max-width: 768px){
+  .container{
+    max-width: 560px;
+  }
+  .header{
+    flex-wrap: wrap;
+  }
+  .search-form{
+    order: 5;
+    margin: 15px 0 15px 0;
+  }
+  .promo{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px){
+  .container{
+    max-width: 90%;
+  }
+  .tabs-card{
+    max-width: 100%;
+  }
 }
